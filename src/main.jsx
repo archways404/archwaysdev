@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		<BrowserRouter>
 			<Routes>
 				<Route
-					path="/welcome"
+					path="/archwaysdev/"
 					element={<Welcome />}
 				/>
 			</Routes>
