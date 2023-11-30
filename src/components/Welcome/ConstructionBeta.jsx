@@ -6,7 +6,7 @@ export default function ConstructionBeta() {
 	useEffect(() => {
 		const fetchMessages = async () => {
 			try {
-				const response = await fetch('http://82.183.49.2:9999/api/messages');
+				const response = await fetch('https://82.183.49.2:9999/api/messages');
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}

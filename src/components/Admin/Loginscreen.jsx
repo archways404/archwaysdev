@@ -18,7 +18,7 @@ export default function Loginscreen() {
 	const handleLogin = async (event) => {
 		event.preventDefault();
 		try {
-			const response = await fetch('http://82.183.49.2:9999/api/adminlogin/', {
+			const response = await fetch('https://82.183.49.2:9999/api/adminlogin/', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
