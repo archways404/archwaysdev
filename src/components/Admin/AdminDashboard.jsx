@@ -33,7 +33,7 @@ export default function AdminDashboard() {
 	useEffect(() => {
 		const fetchMessages = async () => {
 			try {
-				const response = await fetch('http://localhost:9999/api/messages');
+				const response = await fetch('http://82.183.49.2:9999/api/messages');
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
@@ -63,7 +63,7 @@ export default function AdminDashboard() {
 	const deleteMessageByTimestamp = async (timestamp) => {
 		try {
 			console.log('timestamp: ', timestamp);
-			const response = await fetch('http://localhost:9999/api/messages', {
+			const response = await fetch('http://82.183.49.2:9999/api/messages', {
 				method: 'DELETE',
 				headers: {
 					'Content-Type': 'application/json',
