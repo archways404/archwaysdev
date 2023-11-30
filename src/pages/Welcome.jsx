@@ -1,4 +1,4 @@
-import Construction from '../components/Welcome/Construction.jsx';
+//import Construction from '../components/Welcome/Construction.jsx';
 import ConstructionBeta from '../components/Welcome/ConstructionBeta.jsx';
 
 function Welcome() {

@@ -1,6 +1,4 @@
-import logo from '../../assets/logo-t.png';
-
-export default function Component() {
+export default function ConstructionBeta() {
 	return (
 		<section className="min-h-screen bg-primary flex flex-col items-center justify-center">
 			<h1 className="text-6xl font-bold text-gray-400 mb-6">archways404.dev</h1>
