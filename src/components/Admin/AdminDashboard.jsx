@@ -97,7 +97,7 @@ export default function AdminDashboard() {
 		e.preventDefault();
 
 		try {
-			const response = await fetch('http://localhost:9999/api/messages', {
+			const response = await fetch('http://82.183.49.2:9999/api/messages', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
