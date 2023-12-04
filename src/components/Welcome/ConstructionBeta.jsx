@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router';
 
 export default function ConstructionBeta() {
 	const [statusMessage, setStatusMessage] = useState(null);
+
+	const Navigate = useNavigate();
 
 	useEffect(() => {
 		const fetchMessages = async () => {
@@ -50,6 +53,11 @@ export default function ConstructionBeta() {
 				onClick={() => (window.location = 'https://archways404.hashnode.dev/')}
 				className="bg-primary border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black font-bold py-2 px-3 rounded-full">
 				Read more
+			</button>
+			<button
+				onClick={() => Navigate('/admin')}
+				className="absolute bottom-4 right-4 bg-primary border-2 border-primary text-primary hover:bg-yellow-300 hover:text-black font-bold py-2 px-3 rounded-full">
+				ADMIN
 			</button>
 		</section>
 	);
