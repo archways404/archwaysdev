@@ -9,7 +9,7 @@ export default function ConstructionBeta() {
 	useEffect(() => {
 		const fetchMessages = async () => {
 			try {
-				const response = await fetch('http://localhost:9999/api/messages');
+				const response = await fetch('https://localhost:9999/api/messages');
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
@@ -93,3 +93,5 @@ function IconConstruction(props) {
 		</svg>
 	);
 }
+
+
