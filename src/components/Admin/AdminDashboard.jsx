@@ -63,7 +63,7 @@ export default function AdminDashboard() {
 	const deleteMessageByTimestamp = async (timestamp) => {
 		try {
 			console.log('timestamp: ', timestamp);
-			const response = await fetch('https://82.183.49.2:9999/api/messages', {
+			const response = await fetch('https://localhost:9999/api/messages', {
 				method: 'DELETE',
 				headers: {
 					'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ export default function AdminDashboard() {
 		e.preventDefault();
 
 		try {
-			const response = await fetch('https://82.183.49.2:9999/api/messages', {
+			const response = await fetch('https://localhost:9999/api/messages', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

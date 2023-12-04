@@ -6,7 +6,7 @@ export default function ConstructionBeta() {
 	useEffect(() => {
 		const fetchMessages = async () => {
 			try {
-				const response = await fetch('https://82.183.49.2:9999/api/messages');
+				const response = await fetch('https://localhost:9999/api/messages');
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
@@ -47,9 +47,7 @@ export default function ConstructionBeta() {
 				<IconConstruction className="h-12 w-12 text-yellow-500" />
 			</div>
 			<button
-				onClick={() =>
-					(window.location = 'https://modernprimula.hashnode.dev/')
-				}
+				onClick={() => (window.location = 'https://archways404.hashnode.dev/')}
 				className="bg-primary border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black font-bold py-2 px-3 rounded-full">
 				Read more
 			</button>
@@ -87,3 +85,5 @@ function IconConstruction(props) {
 		</svg>
 	);
 }
+
+
